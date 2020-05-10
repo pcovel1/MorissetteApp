@@ -1,9 +1,12 @@
 import React from 'react'
+import Header from  './header'
+import Footer from './footer'
 import { Form, Button, Col, Row } from 'react-bootstrap'
 
 const FinanceForm = () => {
     return (
         <div>
+            <Header />
             <Form onSubmit={() => { alert('Form Submitted'); }}
             >
                 <h2 id="header">Financing</h2>
@@ -84,6 +87,7 @@ const FinanceForm = () => {
                     Submit
                 </Button>
             </Form>
+            <Footer />
         </div>
     )
 }
